@@ -28,6 +28,7 @@ function generatePassword() {
     alert("You have selected " + noOfXters + "-character password.")
   }
 
+  //ask user to select password criteria
 function passwordCriteria(){
   isUppercase = confirm("Press 'OK' if you want uppercase characters. If not, press 'Cancel'. ")
   isLowercase = confirm("Press 'OK' if you want lowercase characters. If not, press 'Cancel'. ")
@@ -36,6 +37,7 @@ function passwordCriteria(){
 }
 passwordCriteria();
 
+//tell user to select at least one criteria if he clicked 'cancel' for all criteria options
 while(!isUppercase && !isLowercase && !isNumbers && !isSpecialXters){
   alert("You need to select at least one password criteria");
   passwordCriteria();
@@ -57,12 +59,15 @@ passwordPossibilities += uppercase;
   // return passwordPossibilities;
 
 //pick random values
-var random = "";
+var passwordOutput = "";
 for(var i=0; i<noOfXters; i++){
-   random+= passwordPossibilities[Math.floor(Math.random() * passwordPossibilities.length)];
-  console.log(random);
+  //generate random number
+  var randomNumber = Math.floor(Math.random() * passwordPossibilities.length);
+  // the final output
+  passwordOutput+= passwordPossibilities[randomNumber];
+  console.log(passwordOutput);
 }
-return random;
+return passwordOutput;
 }
  
 function writePassword() {
