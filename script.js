@@ -34,7 +34,7 @@ function generatePassword() {
 
   //tell user to select at least one criteria if he clicked 'cancel' for all criteria options
   while (!isUppercase && !isLowercase && !isNumbers && !isSpecialXters) {
-    alert("You need to select at least one password criteria");
+    alert("You have not selected any criteria! Please select at least one.");
     passwordCriteria();
   }
 

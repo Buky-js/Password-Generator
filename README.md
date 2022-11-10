@@ -10,13 +10,13 @@ Below is how the application works:
 * The user is then prompted to select either uppercase, lowercase, number, or special characters as password criteria. If user doesnt select any, he is prompted to select at least one.
 * When all the conditions have been met, the password appears in the textarea.
 
-# Installation
+## Installation
 
-The URL of the deployed application is: 
+The URL of the deployed application is: https://buky-js.github.io/Password-Generator/
 
-You URL of the GitHub repository containing the code is: 
+You URL of the GitHub repository containing the code is: https://github.com/Buky-js/Password-Generator
 
-# Usage
+## Usage
 You can find the code to the application in my Github account
 
 ## Credits
