@@ -18,7 +18,7 @@ function generatePassword() {
     alert("You have entered an invalid number. Please input any number from 8 to 128.")
     return;
   }
-  //If correct, tell user how many xters he has selected.
+  //If correct, tell user how many characters he has selected.
   if (noOfXters >= 8 && noOfXters <= 128) {
     alert("You have selected " + noOfXters + "-character password.")
   }
